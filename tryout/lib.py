@@ -47,6 +47,11 @@ def clean_data(data):
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
 
+def shout(name, **kwargs):
+    if kwargs:
+        print(kwargs.keys())
+        print(kwargs.values())
+    print(str(name).upper()+' !!!')
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
